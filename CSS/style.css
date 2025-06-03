@@ -1,0 +1,243 @@
+/* ========== Общие стили ========== */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff8f0; /* светлый кремовый */
+    color: #4b2e05; /* темно-коричневый */
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* ========== Хедер ========== */
+  
+  header {
+    background-color: #d2691e; /* рыжевато-коричневый (корочка булочки) */
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(210, 105, 30, 0.4);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff3b0; /* теплый кремовый (сыр) */
+    letter-spacing: 2px;
+    font-feature-settings: "liga" off;
+  }
+  
+  /* ========== Навигация ========== */
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff3b0; /* сливочный желтый */
+    padding: 12px 0;
+    box-shadow: inset 0 -1px 0 #f5d88c;
+  }
+  
+  nav a {
+    color: #7b4e00; /* темно-желто-коричневый */
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 1.1rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+  
+  nav a:hover,
+  nav a:focus {
+    background-color: #a3611a; /* насыщенный бурый */
+    color: #fff8e1; /* очень светлый желтый */
+    outline: none;
+  }
+  
+  /* ========== Секции ========== */
+  
+  section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px 20px;
+    background-color: #fffdf6; /* почти белый с легким бежем */
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(139, 69, 19, 0.15); /* мягкая коричневая тень */
+  }
+  
+  section h2,
+  section h3,
+  section h4 {
+    font-weight: 700;
+    color: #7b4e00;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 1.4rem;
+  }
+  
+  section p {
+    color: #5a3e01; /* темно-золотистый */
+    font-size: 1rem;
+    margin-bottom: 14px;
+  }
+  
+  /* ========== Меню ========== */
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #f5d88c; /* светлая булочка */
+  }
+  
+  .burger-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 1px 6px rgba(139, 69, 19, 0.2);
+    flex-shrink: 0;
+  }
+  
+  .burger-name {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #a35400; /* насыщенный карамельный */
+    margin-bottom: 6px;
+    display: inline-block;
+  }
+  
+  /* ========== Карточки достижений и вакансий ========== */
+  
+  .kartochka {
+    background-color: #fff8e1; /* нежный сливочный */
+    border: 1.5px solid #f5d88c;
+    padding: 22px 25px;
+    border-radius: 12px;
+    margin-bottom: 28px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .kartochka:hover {
+    box-shadow: 0 8px 20px rgba(163, 97, 26, 0.25);
+  }
+  
+  .kartochka h2 {
+    font-size: 1.5rem;
+    color: #7b4e00;
+    margin-bottom: 10px;
+  }
+  
+  .highlight-text {
+    background-color: #fff3b0;
+    color: #d2691e;
+    font-weight: 700;
+    font-style: italic;
+    padding: 10px 14px;
+    border-radius: 10px;
+    max-width: fit-content;
+    margin-top: 12px;
+  }
+  
+  
+  /* ========== Форма обратной связи ========== */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1.8px solid #f5d88c;
+    font-size: 1rem;
+    color: #7b4e00;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+    background-color: #fffdf6;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #a3611a;
+    outline: none;
+    box-shadow: 0 0 8px #a3611aaa;
+  }
+  
+  button[type="submit"] {
+    background-color: #d2691e;
+    color: #fff3b0;
+    border: none;
+    padding: 14px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+  }
+  
+  button[type="submit"]:hover,
+  button[type="submit"]:focus {
+    background-color: #a35400;
+    outline: none;
+  }
+  
+  /* ========== Футер ========== */
+  
+  footer {
+    background-color: #7b4e00;
+    color: #fff3b0;
+    text-align: center;
+    padding: 22px 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1.1px;
+    box-shadow: inset 0 2px 5px rgba(123, 78, 0, 0.4);
+  }
+  
+  /* ========== Адаптивность ========== */
+  
+  @media (max-width: 650px) {
+    .menu-list li {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .burger-img {
+      width: 90vw;
+      max-width: 280px;
+      height: auto;
+      margin-bottom: 12px;
+    }
+  
+    nav {
+      flex-wrap: wrap;
+    }
+  
+    nav a {
+      margin: 8px 12px;
+    }
+  }
+  
